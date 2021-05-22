@@ -1,0 +1,14 @@
+<h1 class="mt-4">Dashboard</h1>
+
+
+<%if(locals.name){ %>
+    <p class="lead mb-3">Welcome <%=name%></p>
+<% } %>
+<%if(locals.user){ %>
+    <p class="lead mb-3">Welcome <%=user.name%></p>
+<% } %>
+
+<% if(locals.picture){%>
+<img src="<%=picture %>">
+<% } %>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
